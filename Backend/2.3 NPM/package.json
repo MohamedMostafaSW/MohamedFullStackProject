@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "inquirer": "^12.9.0",
+    "qr-image": "^3.2.0",
+    "superheroes": "^4.0.0"
+  },
+  "type": "module"
+}

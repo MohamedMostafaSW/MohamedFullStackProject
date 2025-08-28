@@ -1,0 +1,147 @@
+/* General Reset */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #1d3557;
+  color: white;
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Main Container */
+main {
+  padding: 30px;
+  margin: auto;
+}
+
+/* Post Card */
+.post-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #1d3557;
+}
+
+/* Buttons */
+button,
+a.button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px 5px 0 0;
+}
+
+/* Delete button */
+button.delete,
+a.delete {
+  background-color: #e63946;
+  color: white;
+}
+
+button.delete:hover,
+a.delete:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+}
+
+/* Edit button */
+button.edit,
+a.edit {
+  background-color: #457b9d;
+  color: white;
+}
+
+button.edit:hover,
+a.edit:hover {
+  background-color: #1d3557;
+  transform: scale(1.05);
+}
+
+/* Form Styling */
+form input[type="text"],
+form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: block;
+}
+
+form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #457b9d;
+}
+
+/* Footer */
+footer {
+  background: #1d3557;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 30px;
+  border-top: 3px solid #ffcc00;
+  grid-template-columns: auto;
+
+}

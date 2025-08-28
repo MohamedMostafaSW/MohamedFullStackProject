@@ -1,0 +1,32 @@
+<div class="page">
+  <%- include("partials/header.ejs")%>
+  <main>
+    <h2>ALL posts</h2>
+
+    <% if (posts.length == 0) { %>
+      <p>no posts yet <a href="/new">Create one </a></p>
+    <% } else { %> 
+      <!-- Grid wrapper ONLY for posts -->
+      <div class="post-container">
+        <% posts.forEach(post => { %>
+          <div class="post">
+            <h3><%= post.title %></h3>
+            <p><%= post.content %></p>
+
+            <form
+              action="/delete/<%= post.id %>"
+              method="POST"
+              style="display: inline"
+            >
+              <button type="submit" class="delete">Delete</button>
+            </form>
+
+            <a href="/edit/<%= post.id %>" class="edit button">Edit</a>
+          </div>
+        <% }); %>
+      </div>
+    <% } %>
+  </main>
+
+  <%- include("partials/footer.ejs")%>
+</div>
